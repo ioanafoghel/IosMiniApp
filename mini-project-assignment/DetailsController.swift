@@ -22,8 +22,8 @@ class DetailsController: UIViewController {
     
     
     @IBOutlet weak var pubDateLabel: UILabel!
-    
-    @IBOutlet weak var summaryLabel: UILabel!
+   
+    @IBOutlet weak var summaryTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +38,7 @@ class DetailsController: UIViewController {
             pubDateLabel.text = "Publication date: " + pubDate
        }
        if let summary = summaryProperty{
-            summaryLabel.text = "Summary: " + summary
+            summaryTextView.text = "Summary: \n" + summary
         
         }
     }
