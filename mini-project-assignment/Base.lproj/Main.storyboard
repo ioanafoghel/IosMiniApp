@@ -27,12 +27,6 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVS-da-1Zp">
-                                            <rect key="frame" x="8" y="-8" width="253" height="29"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Summary:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I48-xw-Th4">
                                             <rect key="frame" x="300" y="22" width="78" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -45,12 +39,19 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVS-da-1Zp">
+                                            <rect key="frame" x="8" y="-8" width="253" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="author" destination="Ffw-iY-yNt" id="Idi-sU-fIv"/>
-                                    <outlet property="summary" destination="I48-xw-Th4" id="7l2-vk-Sl1"/>
-                                    <outlet property="title" destination="nVS-da-1Zp" id="l4V-UL-H23"/>
+                                    <outlet property="author" destination="Ffw-iY-yNt" id="skH-dt-QEV"/>
+                                    <outlet property="pubDate" destination="HNd-IF-1Mo" id="AQg-OR-u93"/>
+                                    <outlet property="summary" destination="I48-xw-Th4" id="rGg-oE-pJ3"/>
+                                    <outlet property="title" destination="nVS-da-1Zp" id="mZX-So-bJW"/>
                                     <segue destination="DRh-8o-j2o" kind="show" identifier="showDetails" id="niP-4F-xpn"/>
                                 </connections>
                             </tableViewCell>
@@ -92,14 +93,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Summary:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1f-Jk-0aK">
-                                <rect key="frame" x="20" y="183" width="563" height="409"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Publication Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wl0-i2-0Gs" userLabel="pubDate Label">
+                                <rect key="frame" x="20" y="145" width="485" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Publication Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wl0-i2-0Gs" userLabel="pubDate Label">
-                                <rect key="frame" x="20" y="145" width="287" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Summary:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1f-Jk-0aK">
+                                <rect key="frame" x="20" y="183" width="563" height="409"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -109,10 +110,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Lfz-NP-uhP"/>
                     <connections>
-                        <outlet property="authorLabel" destination="yb9-BU-9wG" id="JrC-Mb-pK2"/>
-                        <outlet property="categoryLabel" destination="wl0-i2-0Gs" id="s55-vi-OHg"/>
-                        <outlet property="summaryLabel" destination="H1f-Jk-0aK" id="r1A-sz-AaN"/>
-                        <outlet property="titleLabel" destination="MwG-7Z-xlK" id="Xh2-rQ-u89"/>
+                        <outlet property="authorLabel" destination="yb9-BU-9wG" id="b5G-Vx-Xtk"/>
+                        <outlet property="pubDateLabel" destination="wl0-i2-0Gs" id="cQO-BV-yUX"/>
+                        <outlet property="summaryLabel" destination="H1f-Jk-0aK" id="auA-VQ-v9R"/>
+                        <outlet property="titleLabel" destination="MwG-7Z-xlK" id="urp-sC-50J"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Bm-lz-Odh" userLabel="First Responder" sceneMemberID="firstResponder"/>

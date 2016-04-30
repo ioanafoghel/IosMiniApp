@@ -16,10 +16,10 @@ class DetailsController: UIViewController {
     var pubDateProperty: String?
     var summaryProperty: String?
     
-
     @IBOutlet weak var titleLabel: UILabel!
-    
+
     @IBOutlet weak var authorLabel: UILabel!
+    
     
     @IBOutlet weak var pubDateLabel: UILabel!
     
