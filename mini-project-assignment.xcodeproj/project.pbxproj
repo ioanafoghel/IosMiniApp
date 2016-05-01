@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D02DA3A1CD622AA008F2CFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D02DA391CD622AA008F2CFA /* ViewController.swift */; };
 		5D47BF171CD3627600F55487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D47BF161CD3627600F55487 /* AppDelegate.swift */; };
 		5D47BF1C1CD3627600F55487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D47BF1A1CD3627600F55487 /* Main.storyboard */; };
 		5D47BF1E1CD3627600F55487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D47BF1D1CD3627600F55487 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		50FCFC42CE731C9C1D013251 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5D02DA391CD622AA008F2CFA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5D47BF131CD3627600F55487 /* mini-project-assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mini-project-assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D47BF161CD3627600F55487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D47BF1B1CD3627600F55487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				5D47BF461CD367A400F55487 /* Book.swift */,
 				5D47BF481CD36CA700F55487 /* TableViewCell.swift */,
 				5D47BF4A1CD372F100F55487 /* DetailsController.swift */,
+				5D02DA391CD622AA008F2CFA /* ViewController.swift */,
 			);
 			path = "mini-project-assignment";
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				5D47BF471CD367A400F55487 /* Book.swift in Sources */,
 				5D47BF451CD3664C00F55487 /* TableViewController.swift in Sources */,
 				5DFDC10E1CD3EDF500B42302 /* SwiftyJSON.swift in Sources */,
+				5D02DA3A1CD622AA008F2CFA /* ViewController.swift in Sources */,
 				5D47BF4B1CD372F100F55487 /* DetailsController.swift in Sources */,
 				5D47BF171CD3627600F55487 /* AppDelegate.swift in Sources */,
 			);
