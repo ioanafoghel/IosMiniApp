@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             circleLayer.strokeColor = UIColor.blueColor().colorWithAlphaComponent(0.5).CGColor
             
             circleLayer.strokeStart = 0.0
-            circleLayer.strokeEnd = 1.0
+            circleLayer.strokeEnd = 0.0
         }
     }
     
@@ -58,19 +58,19 @@ class ViewController: UIViewController {
         strokeEndAnimation.autoreverses = false
         strokeEndAnimation.repeatCount = 0.0
         
-//        strokeEndAnimation.start = { [unowned self] in
-//            print("Woo, the animation starts!")
-            self.stateLabel.text = "Animating"
-//        }
+        strokeEndAnimation.start = { [unowned self] in
+            print("Woo, the animation starts!")
+            self.stateLabel.text = "Downloading"
+        }
         
-//        strokeEndAnimation.animating = { progress in
-//            print("progress: \(progress)")
-//        }
+        strokeEndAnimation.animating = { progress in
+            print("progress: \(progress)")
+        }
         
-//        strokeEndAnimation.completion = { [unowned self] finished in
-//            print("Awesome, the animation just finished! :)")
-//            self.stateLabel.text = "Finished"
-//        }
+        strokeEndAnimation.completion = { [unowned self] finished in
+            print("Awesome, the animation just finished! :)")
+            self.stateLabel.text = "Finished"
+        }
         
        circleLayer.addAnimation(strokeEndAnimation, forKey: "strokeEndAnimation")
         
