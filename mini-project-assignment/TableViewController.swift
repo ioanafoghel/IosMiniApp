@@ -42,7 +42,9 @@ class TableViewController: UITableViewController {
         cell.author.text = book.author
         cell.author.textColor = UIColor.blackColor()
         cell.pubDate.text = book.pubDate
+        cell.pubDate.hidden = true
         cell.summary.text = book.summary
+        cell.summary.hidden = true
         
         return cell
     }
