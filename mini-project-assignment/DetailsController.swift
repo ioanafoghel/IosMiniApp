@@ -24,6 +24,7 @@ class DetailsController: UIViewController {
     @IBOutlet weak var pubDateLabel: UILabel!
    
     @IBOutlet weak var summaryTextView: UITextView!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()

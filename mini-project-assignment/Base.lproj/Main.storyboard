@@ -68,7 +68,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZsZ-yy-ZOe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134" y="460"/>
+            <point key="canvasLocation" x="1649" y="508"/>
         </scene>
         <!--Details Controller-->
         <scene sceneID="uCe-lP-a0M">
@@ -107,7 +107,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="q3q-0H-yFn" userLabel="Summary">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="q3q-0H-yFn" userLabel="Summary">
                                 <rect key="frame" x="20" y="207" width="485" height="385"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -134,7 +134,13 @@
                             <constraint firstItem="q3q-0H-yFn" firstAttribute="trailing" secondItem="wl0-i2-0Gs" secondAttribute="trailing" id="u3S-A0-SkI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Lfz-NP-uhP"/>
+                    <navigationItem key="navigationItem" id="Lfz-NP-uhP">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="2MU-Kh-Sor" userLabel="Back">
+                            <connections>
+                                <segue destination="018-f3-49h" kind="unwind" unwindAction="back:" id="Uwi-hk-hXU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="authorLabel" destination="yb9-BU-9wG" id="b5G-Vx-Xtk"/>
                         <outlet property="pubDateLabel" destination="wl0-i2-0Gs" id="cQO-BV-yUX"/>
@@ -143,6 +149,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Bm-lz-Odh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="018-f3-49h" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3020" y="503"/>
         </scene>
@@ -180,7 +187,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEH-wh-cge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1983" y="460"/>
+            <point key="canvasLocation" x="2325" y="503"/>
         </scene>
     </scenes>
 </document>
