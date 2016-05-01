@@ -1,0 +1,10 @@
+PODS:
+  - Swift-CAAnimation-Closure (1.4)
+
+DEPENDENCIES:
+  - Swift-CAAnimation-Closure (~> 1.0)
+
+SPEC CHECKSUMS:
+  Swift-CAAnimation-Closure: 9229ece23497fe8c073587ac63f14e74b64f483a
+
+COCOAPODS: 0.39.0

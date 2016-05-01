@@ -1,0 +1,6 @@
+framework module Swift_CAAnimation_Closure {
+  umbrella header "Swift-CAAnimation-Closure-umbrella.h"
+
+  export *
+  module * { export * }
+}
